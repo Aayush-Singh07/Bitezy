@@ -11,15 +11,27 @@ This repository contains the complete ecosystem:
 
 ## 📸 App Screenshots
 
-> [!TIP]
-> **To the Developer:** Please provide the following screenshots to make this README truly pop!
-> 1. **User App:** Home Screen (Menu), Tracking Screen (Live Map).
-> 2. **RMS:** Analytics Dashboard (Charts), Live Orders Panel.
-> 3. **Rider App:** Order Assignment Screen, Navigation View.
-
 | User App | Restaurant Management System | Rider App |
 | :---: | :---: | :---: |
-| ![User App Placeholder](https://via.placeholder.com/300x600?text=User+App+Home) | ![RMS Placeholder](https://via.placeholder.com/600x300?text=RMS+Dashboard) | ![Rider App Placeholder](https://via.placeholder.com/300x600?text=Rider+App+Interface) |
+| <img src="user-1.png" width="200" /> <br> *Interface & Menu* | <img src="rms-1.png" width="400" /> <br> *Analytics Dashboard* | <img src="rider-1.png" width="200" /> <br> *Logistics Cockpit* |
+
+### 🔍 System Deep-Dive
+
+#### 📱 User Experience
+<p align="center">
+  <img src="user-2.png" width="250" alt="User Screen 2" />
+  <img src="user-3.png" width="250" alt="User Screen 3" />
+</p>
+
+#### 🏪 Restaurant Management (RMS)
+<p align="center">
+  <img src="rms-2.png" width="600" alt="RMS Screen 2" />
+</p>
+
+#### 🛵 Rider Terminal
+<p align="center">
+  <img src="rider-2.png" width="250" alt="Rider Screen 2" />
+</p>
 
 ---
 
