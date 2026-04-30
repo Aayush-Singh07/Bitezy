@@ -1,0 +1,557 @@
+Bhai ab tu actual product spec stage pe aa gaya hai — ye wahi document hai jo kisi bhi dev team / antigravity ko dena hota hai.
+Main tujhe clear, no-BS, production-grade product brief deta hoon 👇
+
+
+---
+
+🚀 BITEZY — FULL PRODUCT SPEC (FOR BUILDING)
+
+
+---
+
+🧠 1. WHAT ARE WE BUILDING
+
+Bitezy = 10-minute hyperlocal snack delivery platform
+
+👉 Focus:
+
+Bakery snacks (puff, samosa, chai, rolls)
+
+Combos (high conversion)
+
+Future: high-protein heat & deliver meals
+
+
+👉 NOT:
+
+full restaurant marketplace
+
+NOT 30–40 min delivery
+
+
+👉 CORE IDEA:
+
+> “Nearby bakery se fresh snacks, 10 min me ghar pe”
+
+
+
+
+---
+
+🎯 2. CORE EXPERIENCE (USER FLOW)
+
+
+---
+
+🟢 Step 1: Open App
+
+Auto location detect
+
+Show nearest bakery (single vendor model per zone)
+
+
+
+---
+
+🟢 Step 2: Browse
+
+Sections:
+
+Quick Picks
+
+Combos (main focus 💰)
+
+All Snacks
+
+Drinks
+
+
+👉 Everything should feel:
+
+FAST
+
+SIMPLE
+
+LOW DECISION TIME
+
+
+
+---
+
+🟢 Step 3: Add to Cart
+
+Single restaurant constraint
+
+Cart persists (VERY IMPORTANT)
+
+
+
+---
+
+🟢 Step 4: Checkout
+
+Address select
+
+Payment
+
+Place order
+
+
+
+---
+
+🟢 Step 5: Order Tracking
+
+Live status
+
+Rider assigned
+
+ETA
+
+
+
+---
+
+🟢 Step 6: Delivered
+
+Reorder
+
+Repeat behavior
+
+
+
+---
+
+⚙️ 3. CORE SYSTEM DESIGN
+
+
+---
+
+🧩 System = 3 apps
+
+
+---
+
+📱 1. USER APP (Main)
+
+Features:
+
+Browse menu
+
+Add to cart
+
+Order
+
+Track
+
+Profile
+
+
+
+---
+
+🏪 2. RESTAURANT PANEL
+
+(Simple web/dashboard)
+
+Features:
+
+Login
+
+Manage menu
+
+Toggle open/close
+
+Accept orders
+
+Mark ready
+
+
+
+---
+
+🛵 3. RIDER APP
+
+Features:
+
+Login
+
+Go online/offline
+
+Accept order
+
+Navigate
+
+Mark delivered
+
+
+
+---
+
+🧠 4. BUSINESS LOGIC
+
+
+---
+
+📍 ZONE MODEL
+
+Each zone = ~600m radius
+
+1 primary bakery per zone
+
+1–2 riders per zone
+
+
+
+---
+
+⚡ DELIVERY FLOW
+
+1. User orders
+
+
+2. Bakery prepares
+
+
+3. Rider picks
+
+
+4. Deliver within 10 min
+
+
+
+
+---
+
+⛔ RULES
+
+No multi-restaurant cart
+
+No stacking (initially)
+
+1 rider = 1 order
+
+
+
+---
+
+💰 5. REVENUE MODEL
+
+
+---
+
+💸 Margin sources:
+
+1. Bakery margin (buy cheaper, sell higher)
+
+
+2. Combos (higher margin)
+
+
+3. Delivery fee (optional)
+
+
+4. Future: high protein menu
+
+
+
+
+---
+
+🧠 Goal:
+
+👉 Increase AOV from ₹60 → ₹120
+
+
+---
+
+🧬 6. PRODUCT STRATEGY
+
+
+---
+
+🟢 Phase 1 (NOW)
+
+Snacks + combos
+
+Fast delivery
+
+Simple UI
+
+
+
+---
+
+🟡 Phase 2
+
+High protein meals
+
+Heat & deliver model
+
+
+
+---
+
+🔴 Phase 3
+
+Multi-zone scaling
+
+Rider optimization
+
+Stacking
+
+
+
+---
+
+📦 7. CORE FEATURES (MUST HAVE)
+
+
+---
+
+🔥 USER
+
+Login (Google/Phone)
+
+Location detection
+
+Cart persistence
+
+Order tracking
+
+Multiple addresses
+
+
+
+---
+
+🔥 RESTAURANT
+
+Menu CRUD
+
+Availability toggle
+
+Order management
+
+
+
+---
+
+🔥 RIDER
+
+Live location
+
+Order assignment
+
+Status updates
+
+
+
+---
+
+⚠️ 8. CRITICAL DETAILS (DON’T MISS)
+
+
+---
+
+🧠 Cart persistence
+
+👉 If app closes → cart stays
+
+
+---
+
+🧠 Real-time updates
+
+Order status
+
+Rider location
+
+
+
+---
+
+🧠 Fail cases
+
+Restaurant closed
+
+Rider unavailable
+
+Item out of stock
+
+
+
+---
+
+🎨 9. UX PRINCIPLES
+
+
+---
+
+👉 No clutter
+👉 Max 3 taps to order
+👉 Combos pushed aggressively
+👉 Visual food heavy
+
+
+---
+
+💣 10. DIFFERENTIATION
+
+
+---
+
+Why Bitezy wins:
+
+👉 faster than Swiggy
+👉 cheaper combos
+👉 hyperlocal
+👉 simple menu
+
+
+---
+
+🧠 ONE LINE FOR ANTIGRAVITY
+
+Use this 👇
+
+> “We are building a hyperlocal 10-minute snack delivery platform where each user is mapped to a single nearby bakery, with a fast checkout, persistent cart, real-time order tracking, and a lightweight rider + restaurant system.”
+
+
+
+
+____________________________________
+Acha samjha — ab model solid ho gaya hai 💯
+👉 Rider ko ₹15 fixed payout
+👉 Customer se dynamic charge (₹25 → ₹0)
+
+Main isko clean, investor-level clarity me likh deta hoon 👇
+
+
+---
+
+⚡ BITEZY DELIVERY PRICING MODEL (FINAL)
+
+
+---
+
+🟢 RIDER COST (FIXED)
+
+👉 ₹15 per delivery (flat payout)
+
+predictable cost
+
+easy scaling
+
+no complexity
+
+
+
+---
+
+🟡 CUSTOMER DELIVERY (DYNAMIC)
+
+
+---
+
+🔻 Tier 1: Orders < ₹49
+
+Customer pays: ₹25 delivery
+
+Bitezy pays rider: ₹15
+
+
+👉 Net: +₹10 (covers ops + losses elsewhere)
+
+
+---
+
+🟠 Tier 2: ₹49 – ₹89
+
+Customer pays: ₹15 delivery
+
+Bitezy pays rider: ₹15
+
+
+👉 Net: ₹0 (break-even delivery)
+
+
+---
+
+🟢 Tier 3: ₹89+ (Hero Tier 🚀)
+
+Customer pays: ₹0 delivery
+
+Bitezy pays rider: ₹15
+
+
+👉 Net: -₹15 (subsidized by food margin)
+
+
+---
+
+🎯 CORE STRATEGY LINE
+
+> “Bitezy uses a fixed rider payout model of ₹15 per delivery, while dynamically charging customers between ₹25 and ₹0 based on cart value. Higher-value orders subsidize delivery costs, enabling free delivery above ₹89 while maintaining overall unit profitability.”
+
+
+
+
+---
+
+🧠 WHY THIS WORKS (IMPORTANT)
+
+
+---
+
+👉 Small orders → profit (₹25 collected)
+👉 Mid orders → neutral
+👉 Large orders → loss on delivery BUT profit on food
+
+➡️ Overall system = profitable
+
+
+---
+
+💣 REAL GAME HERE
+
+
+---
+
+You’re doing:
+
+> Delivery margin + food margin = total profit
+
+
+
+Not just delivery.
+
+
+---
+
+🎮 UX GAME (VERY IMPORTANT)
+
+
+---
+
+Show this in app:
+
+👉 “₹25 delivery (Add ₹20 more to reduce it)”
+👉 “Only ₹15 delivery”
+👉 “Free delivery unlocked 🎉”
+
+
+---
+
+🚀 FINAL ONE-LINER (FOR BUILD TEAM)
+
+
+---
+
+> “Delivery partner payout is fixed at ₹15 per order, while customer-facing delivery charges are dynamically adjusted based on cart value (₹25, ₹15, or free), enabling cross-subsidization through higher order values.”
+
+
+
+
+---
+

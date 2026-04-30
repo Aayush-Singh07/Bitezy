@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "Bitezy Rider",
+    "slug": "bitezy-rider",
+    "version": "1.0.2",
+    "orientation": "portrait",
+    "icon": "./assets/app-icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/app-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.bitezy.rider"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/app-icon.png",
+        "backgroundColor": "#000000"
+      },
+      "package": "com.bitezy.rider",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "FOREGROUND_SERVICE",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationAlwaysPermission": "Allow Bitezy Rider to use your location for real-time mission tracking.",
+          "locationWhenInUsePermission": "Allow Bitezy Rider to use your location to find the nearest missions for you.",
+          "isAndroidBackgroundLocationEnabled": false
+        }
+      ]
+    ],
+    "scheme": "bitezy-rider",
+    "newArchEnabled": true,
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "fad3c376-5ab6-46ed-962e-fd1fc8a700a4"
+      }
+    }
+  }
+}

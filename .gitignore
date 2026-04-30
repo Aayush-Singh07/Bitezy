@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+.expo/
+dist/
+dist-test/
+dist-test-2/
+.firebase/
+
+# Build outputs
+android/
+ios/
+*.apk
+*.ipa
+
+# Secrets & Configs (CRITICAL)
+google-services.json
+GoogleService-Info.plist
+bitezy-f5322-firebase-adminsdk-fbsvc-824a04b314.json
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+*.log
+
+# Editor folders
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db

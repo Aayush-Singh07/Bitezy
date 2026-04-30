@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-green: #02844F;
+  --color-brand-hover: #026d41;
+  --color-bitezy-orange: #ff5c00;
+  --color-bitezy-teal: #00d1ff;
+  --color-main-bg: #ffffff; 
+  --color-sidebar-bg: #111827; 
+  --color-card-bg: #ffffff;
+  
+  --font-display: 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+:root {
+  font-family: var(--font-body);
+  background-color: var(--color-main-bg);
+  color: #111827;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
+
+.sidebar {
+  background-color: var(--color-sidebar-bg);
+  color: #9ca3af;
+}
+
+.sidebar-active {
+  background-color: var(--color-brand-green);
+  color: white;
+}
+
+.card {
+  background-color: var(--color-card-bg);
+  border-radius: 4px;
+  border: 1px solid #e5e7eb;
+}
+
+.btn-brand {
+  background-color: var(--color-brand-green);
+  color: white;
+}
+
+.btn-brand:hover {
+  background-color: var(--color-brand-hover);
+}
+
+.btn-accept {
+  background-color: var(--color-brand-green);
+  color: white;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+.btn-preparing {
+  background-color: #f59e0b;
+  color: white;
+}
+
+.btn-ready {
+  background-color: #f3f4f6;
+  color: #4b5563;
+}
+
+/* Scrollbar clean */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 10px;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.modal-content {
+  border-radius: 6px;
+}

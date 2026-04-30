@@ -1,0 +1,72 @@
+{
+  "expo": {
+    "name": "Bitezy",
+    "slug": "Bitezy",
+    "scheme": "bitezy",
+    "version": "1.0.15",
+    "orientation": "portrait",
+    "icon": "./assets/bitezy-logo.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "notification": {
+      "icon": "./assets/bitezy-logo.png",
+      "color": "#02844F",
+      "androidMode": "default",
+      "androidCollapsedTitle": "Bitezy"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "googleServicesFile": "./google-services.json",
+      "icon": "./assets/bitezy-logo.png",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/bitezy-logo.png",
+        "backgroundColor": "#02844F"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.anonymous.Bitezy",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "FOREGROUND_SERVICE",
+        "INTERNET",
+        "ACCESS_NETWORK_STATE",
+        "ACCESS_WIFI_STATE",
+        "VIBRATE",
+        "MODIFY_AUDIO_SETTINGS"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "75685691-6c78-426d-a242-620921eca0e2"
+      }
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow Bitezy to access your location to find nearby restaurants."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/bitezy-logo.png",
+          "color": "#02844F",
+          "sounds": [
+            "./assets/joy.mp3"
+          ]
+        }
+      ]
+    ]
+  }
+}
