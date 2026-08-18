@@ -12,11 +12,12 @@ const CartPill = ({ itemCount, totalWithDelivery, onPress }: CartPillProps) => {
   if (itemCount === 0) return null;
 
   return (
-    <View style={styles.container}>
+    <View style={styles.container} accessibilityLabel="Cart Pill" accessible={true}>
       <TouchableOpacity 
         style={styles.pill} 
         activeOpacity={0.9} 
         onPress={onPress}
+        accessibilityLabel="View Cart"
       >
         <View style={styles.left}>
           <View style={styles.countBadge}>
