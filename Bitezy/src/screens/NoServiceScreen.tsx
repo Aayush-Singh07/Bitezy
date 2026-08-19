@@ -52,7 +52,7 @@ const NoServiceScreen = ({ navigation }: any) => {
         </Animated.View>
 
         {/* Branding Text */}
-        <Text style={styles.headline}>FEATURE BRANCH TEXT</Text>
+        <Text style={styles.headline}>MAIN BRANCH TEXT</Text>
         <Text style={styles.subHeadline}>But our engineers are actively working on it!</Text>
         <Text style={styles.subHeadline}>But we're coming fast. 🔥</Text>
 
