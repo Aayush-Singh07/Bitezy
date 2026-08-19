@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Animated } from 'react-native';
 import { Feather } from '@expo/vector-icons';
-
+//hello world
 type CartPillProps = {
   itemCount: number;
   totalWithDelivery: number;
@@ -13,9 +13,9 @@ const CartPill = ({ itemCount, totalWithDelivery, onPress }: CartPillProps) => {
 
   return (
     <View style={styles.container} accessibilityLabel="Cart Pill" accessible={true}>
-      <TouchableOpacity 
-        style={styles.pill} 
-        activeOpacity={0.9} 
+      <TouchableOpacity
+        style={styles.pill}
+        activeOpacity={0.9}
         onPress={onPress}
         accessibilityLabel="View Cart"
       >
@@ -28,7 +28,7 @@ const CartPill = ({ itemCount, totalWithDelivery, onPress }: CartPillProps) => {
             <Text style={styles.totalLabel}>₹{totalWithDelivery}</Text>
           </View>
         </View>
-        
+
         <View style={styles.right}>
           <Text style={styles.viewCartText}>View Cart</Text>
           <Feather name="chevron-right" size={18} color="#FFF" />
