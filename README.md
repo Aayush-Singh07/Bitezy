@@ -118,3 +118,6 @@ npm run dev
 
 ## 📄 License
 Internal use only. Proprietary software developed by Aayush Singh.
+
+
+<!-- badge: pull-shark PR #2 -->
