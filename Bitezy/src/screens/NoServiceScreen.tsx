@@ -1,7 +1,7 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import {
   View, Text, StyleSheet, TouchableOpacity, SafeAreaView,
-  StatusBar, Platform, Animated, Dimensions,
+  StatusBar, Platform, Animated, Dimensions, ActivityIndicator
 } from 'react-native';
 import { Feather, MaterialCommunityIcons } from '@expo/vector-icons';
 
@@ -9,6 +9,7 @@ const BRAND_GREEN = '#02844F';
 const { width } = Dimensions.get('window');
 
 const NoServiceScreen = ({ navigation }: any) => {
+  const [isChecking, setIsChecking] = useState(false);
   const scaleAnim = useRef(new Animated.Value(0.8)).current;
   const opacityAnim = useRef(new Animated.Value(0)).current;
   const floatAnim = useRef(new Animated.Value(0)).current;
@@ -51,7 +52,8 @@ const NoServiceScreen = ({ navigation }: any) => {
         </Animated.View>
 
         {/* Branding Text */}
-        <Text style={styles.headline}>We're not here yet.</Text>
+        <Text style={styles.headline}>MAIN BRANCH TEXT</Text>
+        <Text style={styles.subHeadline}>But our engineers are actively working on it!</Text>
         <Text style={styles.subHeadline}>But we're coming fast. 🔥</Text>
 
         <View style={styles.divider} />
@@ -63,32 +65,44 @@ const NoServiceScreen = ({ navigation }: any) => {
           Your address is outside our current delivery radius. Try a nearby address or check back soon!
         </Text>
 
-        {/* Stats row */}
-        <View style={styles.statsRow}>
-          <View style={styles.statCard}>
-            <Text style={styles.statNum}>750m</Text>
-            <Text style={styles.statLabel}>Delivery radius</Text>
-          </View>
-          <View style={styles.statDivider} />
-          <View style={styles.statCard}>
-            <Text style={styles.statNum}>10 min</Text>
-            <Text style={styles.statLabel}>Promise</Text>
-          </View>
-          <View style={styles.statDivider} />
-          <View style={styles.statCard}>
-            <Text style={styles.statNum}>Fresh</Text>
-            <Text style={styles.statLabel}>Always</Text>
-          </View>
+        {/* Simple React Native Flexbox Example */}
+        <View
+          style={{
+            flexDirection: 'row',
+            justifyContent: 'space-around',
+            backgroundColor: 'rgba(255,255,255,0.12)',
+            paddingVertical: 18,
+            borderRadius: 20,
+            marginBottom: 28,
+            width: '100%'
+          }}
+        >
+          <Text style={{ fontSize: 20, color: '#FFF' }}>1</Text>
+          <Text style={{ fontSize: 20, color: '#FFF' }}>2</Text>
+          <Text style={{ fontSize: 20, color: '#FFF' }}>3</Text>
         </View>
 
         {/* CTA */}
         <TouchableOpacity
           style={styles.ctaBtn}
-          onPress={() => navigation.replace('AddressPicker')}
+          onPress={() => {
+            setIsChecking(true);
+            setTimeout(() => {
+              setIsChecking(false);
+              navigation.replace('AddressPicker');
+            }, 2000);
+          }}
           activeOpacity={0.85}
+          disabled={isChecking}
         >
-          <Feather name="map-pin" size={18} color={BRAND_GREEN} style={{ marginRight: 8 }} />
-          <Text style={styles.ctaBtnText}>Try a Different Address</Text>
+          {isChecking ? (
+            <ActivityIndicator color={BRAND_GREEN} />
+          ) : (
+            <>
+              <Feather name="map-pin" size={18} color={BRAND_GREEN} style={{ marginRight: 8 }} />
+              <Text style={styles.ctaBtnText}>Try a Different Address</Text>
+            </>
+          )}
         </TouchableOpacity>
 
         <Text style={styles.footNote}>
