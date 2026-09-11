@@ -123,3 +123,6 @@ Internal use only. Proprietary software developed by Aayush Singh.
 
 
 <!-- badge: pull-shark PR #3 - replacement -->
+
+
+<!-- badge: pair-extraordinaire v2 -->
